@@ -6,7 +6,7 @@ int main(){
     printf("Введите h:");
     scanf("%lf", &h);
     graph = fopen("my_graph.txt", "w");
-    while(x<=2+(h/2)){
+    while(x<=2 + (h/2)){
         if(x<=1){
             fprintf(graph, "%lf\t%lf\n", x, cos(x+pow(x,3)));
             printf("%lf\t%lf\n", x, cos(x+pow(x,3)));
