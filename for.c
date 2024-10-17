@@ -6,7 +6,7 @@ int main(){
     printf("Enter h: ");
     scanf("%lf", &h);
     graph = fopen("graph.txt", "w");
-    for (double x=0; x<=2+h/2; x=x+h){
+    for (double x=0; x<=2; x=x+h){
         if(x<=1){
             fprintf(graph, "%lf\t%lf\n", x, cos(x+pow(x,3)));
             printf("%lf\t%lf\n", x, cos(x+pow(x,3)));
